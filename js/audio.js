@@ -17,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-    background(173,226,255);
+    background(0);
     var spectrum = fft.analyze();
     var rms = analyzer.getLevel();
     translate(0,0,-1600);
@@ -25,6 +25,7 @@ function draw(){
     scale(0.3,0.3,0.3);
     push();
         noFill();
+        stroke(255);
         rotateY(-frameCount*0.01);
         sphere(3000+rms*800);
     pop();
@@ -32,7 +33,7 @@ function draw(){
     push();
         for(var i = 0; i < spectrum.length; i++){
             var amp = spectrum[i];
-            var y = map(amp, 0, 255, 0, 11.5*height);
+            var y = map(amp, 0, 255, 0, 11*height);
             fill(255);
             stroke(0);
             push();
