@@ -3,7 +3,7 @@ var w;
 var filter;
 
 function preload(){
-    song = loadSound('yesterye.mp3');
+    song = loadSound('lifeisweak.mp3');
 }
 
 function setup(){
