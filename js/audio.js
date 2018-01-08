@@ -27,7 +27,7 @@ function draw(){
         noFill();
         stroke(255);
         rotateY(-frameCount*0.01);
-        sphere(3000+rms*800);
+        sphere(3000);
     pop();
     rotateY(frameCount*0.015);
     push();
